@@ -1,0 +1,2 @@
+# Using it
+Just drag and drop the files from the repo into your react project and install any depenedencies missing. You may also need to install `@types/node` as a dev dependency for `fs` and `console` to not throw type errors.
