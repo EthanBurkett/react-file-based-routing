@@ -8,7 +8,7 @@ export const start = () => {
   update();
 };
 
-export const update = () => {
+export const update = async () => {
   const files = readDirectory(path.join("src", "pages"));
 
   let output_ts = 'import {RouteObject} from "react-router-dom";\n';
@@ -52,7 +52,7 @@ export const update = () => {
   });
 
   output_ts += `export default routes;\n`;
-  fs.writeFileSync(path.join("routes.tsx"), output_ts);
+  await fs.writeFileSync(path.join("routes.tsx"), output_ts);
 };
 
 const readDirectory = (dir: string) => {
