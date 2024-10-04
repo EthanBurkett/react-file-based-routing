@@ -1,4 +1,4 @@
-import { defineConfig, HmrContext, ViteDevServer } from "vite";
+import { defineConfig, type HmrContext, type ViteDevServer } from "vite";
 import react from "@vitejs/plugin-react";
 import tailwindcss from "tailwindcss";
 import * as routes from "./startup/routes";
